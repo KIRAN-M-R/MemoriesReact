@@ -5,28 +5,34 @@ import FileBase from 'react-file-base64';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux'
 import { createPost, updatePost } from '../../actions/posts';
+import { useHistory } from 'react-router-dom';
 
 const Form = ({currentId,setCurrentId}) => {
     const classes = useStyles();
     const [postData,setPostData] = useState({
         title:'',message:'',tags: '',selectedFiles:''
     })
-    const post = useSelector((state)=>currentId ? state.posts.find((p)=> p._id === currentId): null);
-    const dispatch = useDispatch()
+    const post = useSelector((state)=>currentId ? state.posts.posts.find((p)=> p._id === currentId): null);
+    const dispatch = useDispatch();
+    const history = useHistory();
     const user = JSON.parse(localStorage.getItem('profile'));
     useEffect(()=>{
       if(post) setPostData(post)
     },[post])
+
+
     const handleSubmit = (e)=>{
       e.preventDefault()
       if (currentId===0) {
-        dispatch(createPost({ ...postData, name: user?.result?.name }));
+        dispatch(createPost({ ...postData, name: user?.result?.name},history));
+        
         clear();
       } else {
         dispatch(updatePost(currentId, { ...postData, name: user?.result?.name }));
         clear();
       }
     }
+
     if (!user?.result?.name) {
       return (
         <Paper className={classes.paper}>
@@ -36,12 +42,14 @@ const Form = ({currentId,setCurrentId}) => {
         </Paper>
       );
     }
+
     const clear = ()=>{
         setCurrentId(null)
         setPostData({
           title:'',message:'',tags: '',selectedFiles:''
       })
     }
+
   return (
     <Paper className={classes.paper}>
         <form autoComplete='off' noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
