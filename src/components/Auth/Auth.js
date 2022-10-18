@@ -7,7 +7,7 @@ import {
   Typography,
   Container,
 } from "@material-ui/core";
-import {GoogleLogin} from 'react-google-login'
+
 import useStyles from "./styles";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Input from "./Input";
@@ -118,17 +118,7 @@ const Auth = () => {
           >
             {isSignup ? "Sign Up" : "Sign In"}
           </Button>
-          <GoogleLogin
-            clientId={process.env.GOOGLE_TOKEN}
-            render={(renderProps) => (
-              <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
-                Google Sign In
-              </Button>
-            )}
-            onSuccess={googleSuccess}
-            onFailure={googleError}
-            cookiePolicy="single_host_origin"
-          />
+          
           <Grid container justify="flex-end">
             <Grid item>
               <Button onClick={switchMode}>
