@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac6b3536548f4d7ab8e23644df27df5a",
+    "revision": "e87f8e48c6aa9d9b3d30946de692a642",
     "url": "/MemoriesReact/index.html"
   },
   {
-    "revision": "c3c23b98b6ccf3a66adc",
+    "revision": "3e1645cbbd764ed47eaf",
     "url": "/MemoriesReact/static/css/main.9afd702f.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MemoriesReact/static/js/2.fb7018b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c3c23b98b6ccf3a66adc",
-    "url": "/MemoriesReact/static/js/main.75f1c676.chunk.js"
+    "revision": "3e1645cbbd764ed47eaf",
+    "url": "/MemoriesReact/static/js/main.14f458b8.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/MemoriesReact/static/js/main.75f1c676.chunk.js.LICENSE.txt"
+    "url": "/MemoriesReact/static/js/main.14f458b8.chunk.js.LICENSE.txt"
   },
   {
     "revision": "3f9880f1145e601dc0ab",
