@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab560be8027126a0a3c688193127720e",
+    "revision": "ac6b3536548f4d7ab8e23644df27df5a",
     "url": "/MemoriesReact/index.html"
   },
   {
-    "revision": "861eea1200cc5acad2b8",
+    "revision": "c3c23b98b6ccf3a66adc",
     "url": "/MemoriesReact/static/css/main.9afd702f.chunk.css"
   },
   {
-    "revision": "3b05ac548bbfe48adccd",
-    "url": "/MemoriesReact/static/js/2.faf17c9e.chunk.js"
+    "revision": "6fa9c9b55e5ba97ee1ac",
+    "url": "/MemoriesReact/static/js/2.fb7018b0.chunk.js"
   },
   {
     "revision": "eca373d6688a5d5efead34244f081e8b",
-    "url": "/MemoriesReact/static/js/2.faf17c9e.chunk.js.LICENSE.txt"
+    "url": "/MemoriesReact/static/js/2.fb7018b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "861eea1200cc5acad2b8",
-    "url": "/MemoriesReact/static/js/main.84f1ce45.chunk.js"
+    "revision": "c3c23b98b6ccf3a66adc",
+    "url": "/MemoriesReact/static/js/main.75f1c676.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/MemoriesReact/static/js/main.84f1ce45.chunk.js.LICENSE.txt"
+    "url": "/MemoriesReact/static/js/main.75f1c676.chunk.js.LICENSE.txt"
   },
   {
     "revision": "3f9880f1145e601dc0ab",
